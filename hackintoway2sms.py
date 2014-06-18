@@ -1,0 +1,11 @@
+from splinter import Browser
+browser=Browser('firefox')
+browser.visit('http://www.way2sms.com/content/index.html')
+browser.find_by_name('username').fill('9710101067')
+browser.find_by_name('password').fill('gundus')
+browser.find_by_name('Login').click()
+browser.find_by_css('.boo.I4').click()
+browser.find_by_id('quicksms').click()
+browser.find_by_name('textArea').click()
+browser.find_by_css('.frm-m .inp').click()
+browser.find_by_name('Send').click()
